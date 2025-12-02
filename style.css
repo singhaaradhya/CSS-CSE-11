@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: flex;
     height: 600px;
     width: 1000px;
@@ -29,4 +29,45 @@
     flex-grow: 2;
     align-self: flex-end;
 }
+ */
 
+
+
+
+ .conatiner{
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    background-color: rgb(184, 187, 27);
+    border:1px solid black ;
+    /* grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-areas:"header header header header" "main main . sidebar" "footer footer footer footer";*/
+    column-gap: 10px; 
+    justify-items: center;
+    /* yahan par jab tak height and width ko disable nahi karnege tab tak streach nahi lagegi*/
+    justify-content: ;
+ } 
+
+ .item{
+    height:100px;
+    width:100px; 
+    background-color: cornflowerblue;
+    border:1px solid black;
+    text-align: center;
+    align-content: center;
+    color: white;
+
+ }
+ .item1{
+    grid-area: header;
+ }
+ .item2{
+    grid-area: main;
+ }
+ .item3{
+    grid-area: sidebar;
+ }
+ .item4{
+    grid-area: footer;
+ }
