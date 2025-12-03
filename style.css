@@ -37,16 +37,19 @@
  .conatiner{
     display: grid;
     height: 500px;
-    width: 1000px;
+    width: 1000px; 
     background-color: rgb(184, 187, 27);
-    border:1px solid black ;
-    /* grid-template-columns: repeat(4,1fr) ;
-    grid-template-rows:repeat(3,1fr);
+    border:2px solid black ;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:repeat(3,100px);
     grid-template-areas:"header header header header" "main main . sidebar" "footer footer footer footer";*/
     column-gap: 10px; 
+    row-gap: 10px;
     justify-items: center;
     /* yahan par jab tak height and width ko disable nahi karnege tab tak streach nahi lagegi*/
-    justify-content: ;
+    justify-content:center;
+    align-items: center;
+    grid-auto-columns: 60px;
  } 
 
  .item{
@@ -60,10 +63,18 @@
 
  }
  .item1{
-    grid-area: header;
+    grid-area:header;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: end;
+    align-self: start;
  }
  .item2{
     grid-area: main;
+   
+   
  }
  .item3{
     grid-area: sidebar;
