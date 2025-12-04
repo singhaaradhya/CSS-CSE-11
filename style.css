@@ -1,3 +1,18 @@
+.box{
+   width: 400px;
+   background-color: fuchsia;
+   padding:20px;
+   border:25px solid black;
+   margin: 30px;
+   text-align: center;
+}
+
+
+
+
+
+
+
 /* .container{
     display: flex;
     height: 600px;
@@ -83,7 +98,7 @@
     grid-area: footer;
  } 
   */
-  .box{
+  /* .box{
    width:100%;
    height: 100px;
    background-color: darkviolet;
@@ -109,7 +124,7 @@
       text-align: center;
       align-content: center;
    }
- }
+ } */
  /* li{
    list-style-type: none ;
    text-decoration: none;
